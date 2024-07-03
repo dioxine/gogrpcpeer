@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package grpcpeer;
+
+option go_package = "github.com/dioxine/gogrpcpeer";
+
+message User {
+  int32 id = 1;
+  string first_name = 2;
+  string second_name = 3;
+  string third_name = 4;
+}
+
+message UserRequest {
+  User user = 1;
+}
+
+message UserResponse {
+  User user = 1;
+  string message_response = 2;
+}
+
+// message UserMultipleRequest {
+//   User user = 1;
+// }
+
+// message UserMultipleResponse {
+//   string message_response = 2;
+// }
+
+// message LongUserRequest {
+//   User user = 1;
+// }
+
+// message LongUserResponse {
+//   string message_response = 2;
+// }
+
+service UserService {
+  //Unary
+  rpc User(UserRequest) returns (UserResponse) {};
+  //Server Streaming
+  // rpc UserMultiple(UserMultipleRequest) returns (stream UserMultipleResponse) {};
+  //Client Streaming
+  // rpc LongUser(stream LongUserRequest) returns (LongUserResponse) {};
+}
+
+
