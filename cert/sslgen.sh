@@ -2,7 +2,7 @@
 COUNTRY="RU" #Country code
 STATE="Primorsky Region" #State
 LOCATION="Vladivostok" #City for ex.
-ORGANIZATION_UNIT="My Firm" #Your organization
+ORGANIZATION_UNIT="IT-Express Ltd" #Your organization
 SERVER_CN="localhost" #your domain. most important field. for dev localhost is ok
 
 #Creating directory structure
