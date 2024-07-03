@@ -29,3 +29,6 @@ Start server with `go run .`
 Start client with `go run client/client.go`
 
 Good luck!
+
+P.S. If you copy prepared `cert` folder to the [TypeScript version of GRPC server-client](https://github.com/dioxine/tsgrpcpeer) and use same `.proto` file,
+it will work with TypeScript as server and Go as client or visa-versa.
